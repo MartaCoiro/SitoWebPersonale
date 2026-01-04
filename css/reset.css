@@ -1,0 +1,18 @@
+/* RESET BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #2E2E3D;
+  background: #FAFAFA;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
