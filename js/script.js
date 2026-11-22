@@ -1,39 +1,74 @@
-// SCROLL REVEAL
-const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-  const revealPoint = 150;
+// Animazioni allo scroll: le sezioni entrano una sola volta.
+const revealElements = document.querySelectorAll(".reveal");
 
-  reveals.forEach(el => {
-    const elementTop = el.getBoundingClientRect().top;
-    if (elementTop < windowHeight - revealPoint) {
-      el.classList.add("active");
-    } else {
-      el.classList.remove("active"); // rimuovere se vuoi animazione solo una volta
-    }
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -40px 0px"
+  });
+
+  revealElements.forEach((element) => {
+    revealObserver.observe(element);
+  });
+} else {
+  revealElements.forEach((element) => {
+    element.classList.add("active");
   });
 }
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
-
-// Hamburger Menu Toggle
+// Menu mobile accessibile.
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const navItems = document.querySelectorAll(".nav-links li a");
+const navItems = document.querySelectorAll(".nav-links a");
 
-// Funzione per aprire/chiudere menu
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-  hamburger.classList.toggle("active");
-});
+function closeMenu() {
+  if (!hamburger || !navLinks) return;
 
-// Chiudi menu quando clicchi su un link
-navItems.forEach(item => {
-  item.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-    hamburger.classList.remove("active");
+  navLinks.classList.remove("show");
+  hamburger.classList.remove("active");
+  hamburger.setAttribute("aria-expanded", "false");
+  hamburger.setAttribute("aria-label", "Apri il menu");
+  document.body.classList.remove("menu-open");
+}
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("show");
+
+    hamburger.classList.toggle("active", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+    hamburger.setAttribute(
+      "aria-label",
+      isOpen ? "Chiudi il menu" : "Apri il menu"
+    );
+
+    document.body.classList.toggle("menu-open", isOpen);
   });
-});
 
+  // Chiudi il menu quando si seleziona una voce.
+  navItems.forEach((item) => {
+    item.addEventListener("click", closeMenu);
+  });
+
+  // Chiudi il menu con ESC.
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  // Chiudi il menu quando si torna alla versione desktop.
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      closeMenu();
+    }
+  });
+}

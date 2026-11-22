@@ -1,346 +1,345 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marta Coiro – Web & Cybersecurity Developer</title>
+  <meta name="description" content="Portfolio di Marta Coiro, R&D Full-stack Developer con formazione in Sicurezza Informatica.">
+  <title>Marta Coiro | R&D Full-stack Developer & Cybersecurity</title>
   <link rel="icon" type="image/png" href="img/logoIngranditoSenzaSfondo.png">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <!-- HEADER / NAVBAR -->
   <header>
-    <nav>
-      <!-- Logo -->
-      <a href="#hero" class="logo">
-        <img src="img/logoIngranditoSenzaSfondo.png" alt="Logo Marta Coiro">
+    <nav aria-label="Navigazione principale">
+      <a href="#hero" class="logo" aria-label="Torna all'inizio">
+        <img src="img/logoIngranditoSenzaSfondo.png" alt="Marta Coiro">
       </a>
-
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- Menu voci -->
-      <ul class="nav-links">
+      <button class="hamburger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">Chi sono</a></li>
-        <li><a href="#education">Istruzione</a></li>
-        <li><a href="#projects">Progetti</a></li>
         <li><a href="#experience">Esperienze</a></li>
-        <li><a href="#contact">Contatti</a></li>
+        <li><a href="#skills">Competenze</a></li>
+        <li><a href="#education">Formazione</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#publications">Pubblicazioni</a></li>
+        <li><a href="#contact" class="nav-contact">Contattami <span>↗</span></a></li>
       </ul>
     </nav>
   </header>
 
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Ciao, sono Marta Coiro!</h2>
-      <h3>Web developer & Cybersecurity Enthusiast</h3>
-      <a href="#projects" class="hero-btn">Scopri i miei progetti</a>
-    </div>
-  </section>
-
-  <!-- CHI SONO -->
-  <section id="about" class="reveal about-section">
-    <h2>Chi sono</h2>
-    <div class="about-container">
-      <div class="about-photo">
-        <img src="img/io.jpeg" alt="Marta Coiro">
-      </div>
-      <div class="about-text">
-        <p>Sono Marta Coiro, laureata magistrale in Informatica con specializzazione in Sicurezza Informatica presso
-          l'Università degli Studi di Salerno, con esperienza nello sviluppo web, mobile e nella cybersecurity.</p>
-        <p>Fin da bambina, la curiosità per la tecnologia mi ha spinta a esplorare il mondo digitale, sempre con il
-          desiderio di capire come funzionasse il mondo di Internet e come renderlo sicuro.</p>
-        <p>Oltre agli studi, mi piace coltivare passioni creative come fotografia, disegno e musica, attività che
-          alimentano la mia curiosità e la capacità di osservare i dettagli. Sport e viaggi mi hanno insegnato il valore
-          del lavoro di squadra e della resilienza.</p>
-        <p>Curiosità, determinazione e voglia di imparare guidano ogni mio progetto: credo che ogni sfida sia
-          un’opportunità per crescere e lasciare un’impronta positiva nel mondo digitale.</p>
-        <div class="skills">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
-          <span>Python</span><span>C++</span><span>Flutter</span>
-          <span>SQL</span><span>MongoDB</span><span>SQLite</span>
-          <span>Ubuntu</span><span>KaliLinux</span><span>Java</span><span>Bootstrap</span>
-          <span>OpenSSL</span><span>Unity</span><span>AndroidStudio</span><span>Docker</span>
-          <span>Kubernetes</span><span>C#</span><span>OpenWRT</span><span>React</span><span>Tailwind
-            CSS</span><span>Angular</span><span>GIT</span><span>Jira</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ISTRUZIONE -->
-  <section id="education" class="reveal">
-    <h2>Istruzione</h2>
-    <div class="education-timeline">
-      <div class="education-item">
-        <h3>Università degli Studi di Salerno</h3>
-        <div class="edu-logos">
-          <img src="img/unisa.png" alt="Logo UNISA">
-          <img src="img/dipinf.jpg" alt="Logo dipartimento di Informatica">
-        </div>
-        <div class="thesis-container">
-          <div class="thesis-text">
-            <p>Laurea Magistrale in Informatica – Curriculum Sicurezza Informatica</p>
-            <p><strong>Tesi di Laurea Magistrale:</strong> "Offuscamento del codice: tra teoria e pratica. La
-              piattaforma ObfuSee."</p>
-            <p><strong>Abstract:</strong> ObfuSee esplora l'offuscamento del codice come tecnica di protezione software,
-              implementando metodi avanzati per rendere il codice illeggibile.</p>
-            <p><strong>Voto:</strong>110L/110L</p>
-            <span>2023 – 2025</span>
-            <p>
-              <a href="https://github.com/MartaCoiro/ObfuSee" target="_blank">Visualizza il repository su GitHub</a>
-            </p>
-          </div>
-          <div class="thesis-image">
-            <img src="img/tesiMagistrale.jpeg" alt="ObfuSee Screenshot">
-          </div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <h3>Università degli Studi di Salerno</h3>
-        <div class="edu-logos">
-          <img src="img/unisa.png" alt="Logo UNISA">
-          <img src="img/dipinf.jpg" alt="Logo dipartimento di Informatica">
-        </div>
-        <div class="thesis-container">
-          <div class="thesis-text">
-            <p>Laurea Triennale in Informatica</p>
-            <p><strong>Tesi di Laurea Triennale:</strong> "Sviluppo di algoritmi per l'analisi del suolo mediante le
-              immagini del satellite Sentinel2"</p>
-            <p><strong>Abstract:</strong> Lavoro di tesi triennale realizzato in collaborazione con l'azienda Sense
-              Square. Grazie alle immagini catturate dal satellite Sentinel2 è stato possibile effettuare una mappatura
-              per colori e analizzare vari territori.</p>
-            <p><strong>Voto:</strong>95/110L</p>
-            <span>2019 – 2023</span>
-            <p>
-              <a href="https://github.com/MartaCoiro/Sentinel2" target="_blank">Visualizza il repository su GitHub</a>
-            </p>
-          </div>
-          <div class="thesis-image">
-            <img src="img/tesiTriennale.jpeg" alt="Sentinel2 Screenshot">
-            <img src="img/sense.png" alt="Logo Sense Square">
-          </div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <h3>ISTITUTO D'ISTRUZIONE SUPERIORE "DE SARLO-DE LORENZO" LAGONEGRO - PZ</h3>
-        <div class="edu-logos">
-          <img src="img/liceo.jpg" alt="Logo Liceo">
-        </div>
-        <p>Diploma Scientifco opzione Scienze Applicate</p>
-        <p><strong>Voto:</strong>89/100</p>
-        <p><strong>Percorso didattico:</strong> Durante il percorso didattico ho acquisito conoscenze di base in Scienze
-          Naturali, Matematica, Fisica e Informatica, con particolare attenzione all'hardware e al software per PC, alle
-          reti di base e alla programmazione in C++. Il curriculum includeva anche materie umanistiche (italiano,
-          inglese, filosofia, storia) e corsi aggiuntivi di Giurisprudenza e CAD. </p>
-        <span>2015 – 2019</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROGETTI -->
-  <section id="projects" class="reveal">
-    <h2>Progetti</h2>
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <h3>ObfuSee</h3>
-        <p>Webapp di offuscamento del codice realizzata per la tesi magistrale.</p>
-        <a href="https://github.com/MartaCoiro/ObfuSee" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>The Code Insight Platform</h3>
-        <p>Web app per esperimenti su comprensione del codice (commenti AI vs umani).</p>
-        <a href="https://github.com/MartaCoiro/ISD" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>TSW</h3>
-        <p>E‑commerce musicale sviluppato per il corso di Basi di Dati.</p>
-        <a href="https://github.com/MartaCoiro/TecnologieSoftwarePerIlWeb" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>BasiDiDati</h3>
-        <p>Progetto di modellazione database relazionale ispirato a Spotify.</p>
-        <a href="https://github.com/MartaCoiro/BasiDiDatiI" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>BBmas</h3>
-        <p>Analisi dinamica di digitazione touch per biometria soft.</p>
-        <a href="https://github.com/MartaCoiro/VisioneArtificialeBiometria" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>CinePlus</h3>
-        <p>Piattaforma CinePlus per visualizzazione di film e serie TV.</p>
-        <a href="https://github.com/MartaCoiro/BasiDiDatiII" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>MusicConsole</h3>
-        <p>Gestione database musicale con front‑end e funzionalità interattive.</p>
-        <a href="https://github.com/MartaCoiro/MusicConsole" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>SchoolMath</h3>
-        <p>Progetto del corso di Information Visualization.</p>
-        <a href="https://github.com/MartaCoiro/SchoolMath" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Level12Nebula</h3>
-        <p>Soluzione della sfida Level12 su Nebula per programmazione sicura.</p>
-        <a href="https://github.com/MartaCoiro/Level12Nebula" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Cos'è il Social Engineering</h3>
-        <p>Lezione strutturata sul Social Engineering per scuola superiore.</p>
-        <a href="https://github.com/MartaCoiro/DidatticaInformatica" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Secure MusicConsole</h3>
-        <p>Progetto di sicurezza informatica basato su blockchain per e‑commerce musicale.</p>
-        <a href="https://github.com/MartaCoiro/SicurezzaInformatica" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Sentinel2</h3>
-        <p>Lavoro di tesi triennale: analisi immagini satellite Copernicus in Python.</p>
-        <a href="https://github.com/MartaCoiro/Sentinel2" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>DefNet</h3>
-        <p>Partecipazione alla XI edizione di AppChallenge UNISA con DefNet, soluzione innovativa per la sicurezza
-          informatica.</p>
-        <a href="https://github.com/DefNet-Enterprise-Mobile-Application" target="_blank">GitHub</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ESPERIENZE -->
-  <section id="experience" class="reveal">
-    <h2>Esperienze</h2>
-    <div class="experience-timeline">
-
-      <div class="experience-item">
-        <h3>Digital Platforms S.p.A – R&D Front-end web developer React/Angular</h3>
-        <p>Mi occupo dello sviluppo frontend di applicazioni web utilizzando React e Angular, con
-          esperienza nella realizzazione di Progressive Web App (PWA). Lavoro su progetti interni
-          di Ricerca e Sviluppo (R&D), contribuendo alla progettazione e all'implementazione di
-          nuove funzionalità e soluzioni innovative.
-          Utilizzo quotidianamente Git per il controllo di versione e la gestione del codice
-          sorgente, collaborando in team attraverso workflow basati su branch e pull request.
-          Gestisco le attività di sviluppo tramite Jira, operando secondo metodologie Agile per
-          garantire un processo di sviluppo efficiente e collaborativo.</p>
-      </div>
-
-      <div class="experience-item">
-
-        <h3>Digital Platforms S.p.A – Stage Front-End Developer (6 mesi)</h3>
-        <p>Nel corso del mio stage come Frontend Developer, ho seguito un percorso di crescita
-          tecnica intensivo focalizzato sullo sviluppo di interfacce web moderne. Ho consolidato
-          inizialmente le basi in HTML5, CSS3, JavaScript (ES6+) e TypeScript, per poi
-          specializzarmi nell'utilizzo dei framework React e Angular.
-          Attività e Competenze Sviluppate:
-          •Sviluppo React (v18/19): Ho approfondito l’architettura a componenti utilizzando
-          hook fondamentali e avanzati come useMemo, useCallback e useContext. Ho
-          implementato le novità di React 19 tra cui i Server Components e useActionState.
-          Per la gestione dello stato globale ho adottato il pattern Redux, mentre per la
-          gestione asincrona dei dati ho utilizzato TanStack Query.
-          •Sviluppo Angular: Ho acquisito competenze nella creazione di architetture
-          modulari tramite l'uso di Service, Direttive e Resolver per il pre-fetching dei dati.
-          Ho gestito la logica reattiva attraverso RxJS (Observable, Subject) e costruito
-          interfacce professionali con Angular Material.
-          •Progetti e Integrazioni: Ho realizzato una web-app interna partendo da mockup Figma, garantendo la piena
-          responsività per dispositivi mobile e desktop. Ho gestito l'integrazione con servizi reali del cliente tramite
-          parametri
-          dinamici (UUID/TenantId) e testato le chiamate API con Postman.
-          •Metodologia Agile e Collaborazione: Ho operato all'interno di un team di sviluppo seguendo la metodologia
-          Agile/
-          Scrum, partecipando attivamente ai momenti di coordinamento per la pianificazione e la revisione dei task. Ho
-          gestito
-          il codice sorgente attraverso Git, utilizzando GitHub e GitLab per l'organizzazione dei branch e la
-          collaborazione
-          tramite merge request.
-          •Tooling e Deploy: Ho ottimizzato il flusso di sviluppo utilizzando Vite e Bun, e mi sono occupata
-          personalmente del
-          deploy delle applicazioni sulla piattaforma Vercel.</p>
-      </div>
-
-      <div class="experience-item">
-        <h3>Sense Square – Tirocinio</h3>
-        <p>Durante il mio tirocinio esterno presso <strong>Sense Square</strong>, ho approfondito lo studio del suolo
-          tramite algoritmi di Machine Learning e immagini satellitari della costellazione Copernicus (Sentinel2). Ho
-          realizzato analisi dei colori e mappe dettagliate utilizzando Python, contribuendo alla comprensione e
-          valorizzazione del territorio.</p>
-      </div>
-
-      <div class="experience-item">
-        <h3>App Challenge UNISA – Progetto DefNet</h3>
-        <p>Partecipazione alla XI edizione dell’<strong>App Challenge UNISA</strong> con il progetto
-          <strong>DefNet</strong>, una soluzione innovativa per la sicurezza informatica capace di rilevare minacce
-          digitali tramite algoritmi avanzati e dispositivi hardware portatili. Il team ha sviluppato MVP
-          multipiattaforma sfruttando intelligenza artificiale e tecnologie innovative. DefNet ha vinto il
-          <strong>Premio Giuria Giovani</strong>, confermando l’eccellenza nel problem-solving e nel lavoro di squadra.
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <span class="eyebrow">FULL-STACK DEVELOPER · CYBERSECURITY</span>
+        <h1>Ciao, sono <span class="gradient-text">Marta Coiro</span></h1>
+        <p>
+          Sviluppo applicazioni web e servizi backend, con una formazione
+          specialistica in sicurezza informatica e un approccio attento
+          a qualità, affidabilità e protezione del software.
         </p>
+        <div class="hero-actions">
+          <a href="#projects" class="hero-btn">Scopri i miei progetti <span>↗</span></a>
+          <a href="#contact" class="hero-secondary">Parliamo di una collaborazione</a>
+        </div>
+        <div class="hero-proof"><span></span> Attualmente in R&amp;D presso Digital Platforms S.p.A.</div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal about-section">
+      <h2>Chi sono</h2>
+      <div class="about-intro">
+        <div class="about-photo">
+          <img src="img/io.jpeg" alt="Marta Coiro">
+        </div>
+        <div class="about-text">
+          <span class="about-label">PIACERE, SONO MARTA</span>
+          <h3>Full-stack developer con una sensibilità per la sicurezza</h3>
+          <p>
+            Sono Marta Coiro, laureata magistrale in Informatica, curriculum
+            Sicurezza Informatica, presso l'Università degli Studi di Salerno.
+            Oggi lavoro come R&amp;D Full-stack Developer presso Digital Platforms S.p.A.
+          </p>
+          <p>
+            Mi occupo dello sviluppo di applicazioni web con React e Angular,
+            della realizzazione di servizi backend con Node.js e Java, della
+            progettazione e gestione di database PostgreSQL e dell'integrazione
+            di servizi esterni tramite API REST.
+          </p>
+          <p>
+            Il mio percorso in Sicurezza Informatica mi ha permesso di approfondire
+            crittografia, programmazione sicura, digital forensics e penetration
+            testing. Mi interessa portare questa attenzione alla sicurezza
+            all'interno del ciclo di sviluppo del software.
+          </p>
+          <p>
+            Curiosità, determinazione e collaborazione guidano il mio modo di
+            lavorare. Mi piace affrontare problemi nuovi, imparare tecnologie
+            e contribuire a progetti concreti insieme a un team.
+          </p>
+          <a href="#contact" class="about-contact-btn">Conosciamoci meglio ↗</a>
+        </div>
       </div>
 
-      <div class="experience-item">
-        <h3>Coding Girls – Hackathon “Rethink. AI & Design Thinking”</h3>
-        <p>Quasi 500 studentesse e studenti di 15 scuole superiori della Campania hanno partecipato all’hackathon finale
-          del progetto <strong>Coding Girls Salerno</strong>, promosso da Fondazione Mondo Digitale e Microsoft Italia.
-          Ho contribuito allo sviluppo e mentoring delle attività legate all’uso dell’intelligenza artificiale come leva
-          per progetti innovativi e sostenibili, valorizzando competenze digitali e orientamento alle carriere STEM.</p>
+      <div class="about-bottom" id="skills">
+        <div class="skills-section">
+          <h3 class="skills-title">Competenze tecniche</h3>
+          <p class="skills-subtitle">Le tecnologie e gli strumenti che utilizzo nello sviluppo software e nell'ambito della sicurezza.</p>
+          <div class="skills-grid">
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">⌨️</span><h4>Frontend</h4></div>
+              <div class="skill-tags">
+                <span>React</span><span>Angular</span><span>JavaScript</span><span>TypeScript</span>
+                <span>HTML5</span><span>CSS3</span><span>Angular Material</span><span>Tailwind CSS</span>
+              </div>
+            </article>
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">⚙️</span><h4>Backend &amp; Programming</h4></div>
+              <div class="skill-tags">
+                <span>Node.js</span><span>Java</span><span>Python</span><span>Flask</span>
+                <span>C</span><span>C++</span><span>C#</span><span>Dart</span>
+              </div>
+            </article>
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">🗄️</span><h4>Database &amp; API</h4></div>
+              <div class="skill-tags">
+                <span>PostgreSQL</span><span>MySQL</span><span>SQL</span><span>MongoDB</span>
+                <span>REST API</span>
+              </div>
+            </article>
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">🛡️</span><h4>Cybersecurity &amp; Systems</h4></div>
+              <div class="skill-tags">
+                <span>Kali Linux</span><span>Ubuntu</span><span>Windows</span><span>OpenSSL</span>
+                <span>Penetration Testing</span><span>Digital Forensics</span><span>Kubernetes</span><span>Docker</span>
+              </div>
+            </article>
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">🧰</span><h4>Tools &amp; Workflow</h4></div>
+              <div class="skill-tags">
+                <span>Git</span><span>GitHub</span><span>GitLab</span><span>Jira</span>
+                <span>Figma</span><span>Postman</span><span>Vite</span><span>Bun</span><span>Vercel</span>
+              </div>
+            </article>
+            <article class="skill-category">
+              <div class="skill-heading"><span class="skill-icon">📱</span><h4>Framework &amp; Mobile</h4></div>
+              <div class="skill-tags">
+                <span>Flutter</span><span>Android Studio</span><span>Unity</span><span>Redux</span>
+                <span>RxJS</span><span>TanStack Query</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="approach-card">
+          <span class="approach-label">IL MIO APPROCCIO</span>
+          <h3>Cosa porto in un progetto?</h3>
+          <p>Competenze tecniche, attenzione ai dettagli e disponibilità a collaborare per trasformare le idee in soluzioni concrete.</p>
+          <div class="approach-item"><span>01</span><div><h4>Visione full-stack</h4><p>Dall'interfaccia utente ai servizi backend e alla gestione dei dati.</p></div></div>
+          <div class="approach-item"><span>02</span><div><h4>Security mindset</h4><p>Attenzione a vulnerabilità, configurazioni e programmazione sicura.</p></div></div>
+          <div class="approach-item"><span>03</span><div><h4>Collaborazione Agile</h4><p>Esperienza con team, workflow Git, branch, pull request e Jira.</p></div></div>
+          <div class="approach-item"><span>04</span><div><h4>Condivisione</h4><p>Esperienza come formatrice nel programma Coding Girls.</p></div></div>
+          <a href="#contact" class="approach-cta">Hai un progetto in mente? Parliamone ↗</a>
+        </aside>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="experience" class="reveal">
+      <h2>Esperienze professionali</h2>
+      <div class="experience-timeline">
+        <article class="experience-item">
+          <div class="item-topline"><span class="item-date">Giugno 2026 – Attuale</span><span class="item-type">R&amp;D · Full-stack</span></div>
+          <h3>R&amp;D Full-stack Developer · Digital Platforms S.p.A.</h3>
+          <p>Napoli, Italia</p>
+          <ul class="detail-list">
+            <li>Sviluppo di applicazioni web e PWA con React e Angular.</li>
+            <li>Realizzazione di servizi backend con Node.js e Java.</li>
+            <li>Progettazione e gestione di database PostgreSQL e integrazione di servizi esterni tramite API REST.</li>
+            <li>Contributo alla progettazione e implementazione di funzionalità e soluzioni per progetti interni di Ricerca e Sviluppo.</li>
+            <li>Utilizzo quotidiano di Git e Jira, con workflow basati su branch, pull request e metodologie Agile.</li>
+          </ul>
+        </article>
 
+        <article class="experience-item">
+          <div class="item-topline"><span class="item-date">Novembre 2025 – Maggio 2026</span><span class="item-type">Stage · 6 mesi</span></div>
+          <h3>Frontend Developer Intern · Digital Platforms S.p.A.</h3>
+          <p>Napoli, Italia</p>
+          <ul class="detail-list">
+            <li>Consolidamento di HTML5, CSS3, JavaScript ES6+ e TypeScript, con specializzazione su React 18/19 e Angular.</li>
+            <li>React: componenti e hook, Server Components, useActionState, Redux e TanStack Query.</li>
+            <li>Angular: Service, Direttive, Resolver, RxJS e Angular Material.</li>
+            <li>Realizzazione di una web app responsive a partire da mockup Figma e integrazione con servizi del cliente tramite UUID/TenantId.</li>
+            <li>Test delle API con Postman, collaborazione Agile/Scrum con GitHub e GitLab, tooling Vite e Bun e deploy su Vercel.</li>
+          </ul>
+        </article>
 
-  <!-- CONTATTI -->
-  <!-- CONTATTI -->
-  <section id="contact" class="reveal">
-    <h2>Contatti</h2>
-    <div class="contact-info">
-      <p>Per richieste di collaborazione, progetti o informazioni sui miei lavori, scrivimi direttamente via email:</p>
-      <p><a href="mailto:martacoiro291@gmail.com">martacoiro291@gmail.com</a></p>
-      <p>Seguimi anche sui miei profili social per rimanere aggiornato sui miei progetti:</p>
-      <p>
-        <a href="https://github.com/MartaCoiro" target="_blank">GitHub</a> |
-        <a href="https://www.instagram.com/marta_coiro/" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com/marta.coiro.9/" target="_blank">Facebook</a> |
-        <a href="https://www.linkedin.com/in/marta-coiro-650657227/" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </section>
+        <article class="experience-item">
+          <div class="item-topline"><span class="item-date">Novembre 2022 – Febbraio 2023</span><span class="item-type">Tirocinio</span></div>
+          <h3>Studente tirocinante · Sense Square</h3>
+          <p>Penta (SA), Italia</p>
+          <p>Studio del suolo attraverso algoritmi di Machine Learning e immagini satellitari Sentinel-2 della costellazione Copernicus. Analisi delle immagini e delle variazioni cromatiche territoriali utilizzando Python e relative librerie.</p>
+        </article>
 
+        <article class="experience-item">
+          <div class="item-topline"><span class="item-date">Esperienza formativa</span><span class="item-type">Formazione STEM</span></div>
+          <h3>Formatrice · Coding Girls</h3>
+          <p>Attività di formazione nelle scuole per incentivare la partecipazione delle ragazze alle discipline STEM e diffondere competenze di programmazione e cultura digitale.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p><strong>© 2026 Marta Coiro</strong></p>
-  </footer>
+    <section id="education" class="reveal">
+      <h2>Formazione</h2>
+      <div class="education-timeline">
+        <article class="education-item">
+          <div class="item-topline"><span class="item-date">Settembre 2023 – Ottobre 2025</span><span class="item-type">110 e lode</span></div>
+          <h3>Laurea Magistrale in Informatica · Curriculum Sicurezza Informatica</h3>
+          <div class="edu-logos"><img src="img/unisa.png" alt="Università degli Studi di Salerno"><img src="img/dipinf.jpg" alt="Dipartimento di Informatica"></div>
+          <p>Università degli Studi di Salerno · Fisciano (SA)</p>
+          <p>Approfondimenti in sicurezza dei dati, crittografia, cybersecurity, basi di dati II, digital forensics, visione artificiale e programmazione sicura.</p>
+          <p><strong>Tesi:</strong> “Offuscamento del codice: tra teoria e pratica. La piattaforma ObfuSee”.</p>
+          <p><strong>Esperienza significativa:</strong> partecipazione all'App Challenge con un'applicazione legata alla sicurezza informatica, realizzata in collaborazione con LinearIT e classificata sul podio.</p>
+          <a class="text-link" href="https://github.com/MartaCoiro/ObfuSee" target="_blank" rel="noopener noreferrer">Progetto ObfuSee su GitHub ↗</a>
+        </article>
 
+        <article class="education-item">
+          <div class="item-topline"><span class="item-date">Settembre 2019 – Maggio 2023</span><span class="item-type">95/110 e lode</span></div>
+          <h3>Laurea Triennale in Informatica</h3>
+          <div class="edu-logos"><img src="img/unisa.png" alt="Università degli Studi di Salerno"><img src="img/dipinf.jpg" alt="Dipartimento di Informatica"></div>
+          <p>Università degli Studi di Salerno · Fisciano (SA)</p>
+          <p>Formazione in programmazione C e object-oriented, tecnologie software per il web, sviluppo Android, database, grafica e interattività, crittografia e applicazioni distribuite.</p>
+          <p><strong>Tesi:</strong> “Sviluppo di algoritmi per l'analisi del suolo mediante l'utilizzo delle immagini del satellite Sentinel 2 della costellazione Copernicus”.</p>
+          <a class="text-link" href="https://github.com/MartaCoiro/Sentinel2" target="_blank" rel="noopener noreferrer">Progetto Sentinel2 su GitHub ↗</a>
+        </article>
+
+        <article class="education-item">
+          <div class="item-topline"><span class="item-date">2015 – 2019</span><span class="item-type">89/100</span></div>
+          <h3>Diploma · Liceo Scientifico, opzione Scienze Applicate</h3>
+          <p>Istituto d'Istruzione Superiore “F. De Sarlo – G. De Lorenzo” · Lagonegro (PZ)</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Progetti selezionati</h2>
+      <p class="section-intro">Una selezione di progetti accademici e applicativi descritti nel mio percorso.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-category">Cybersecurity · Tesi magistrale</span>
+          <h3>ObfuSee</h3>
+          <p>Piattaforma sviluppata per esplorare l'offuscamento del codice come tecnica di protezione del software.</p>
+          <a href="https://github.com/MartaCoiro/ObfuSee" target="_blank" rel="noopener noreferrer">Esplora su GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-category">Mobile · Cybersecurity</span>
+          <h3>DefNet</h3>
+          <p>Applicazione legata alla sicurezza informatica realizzata per l'App Challenge in collaborazione con LinearIT. Il progetto ha raggiunto il podio.</p>
+          <a href="https://github.com/DefNet-Enterprise-Mobile-Application" target="_blank" rel="noopener noreferrer">Esplora su GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-category">Web · Database</span>
+          <h3>MusicConsole</h3>
+          <p>Progetto e-commerce musicale: gestione del database, interfaccia grafica e documentazione per la presentazione finale.</p>
+          <a href="https://github.com/MartaCoiro/MusicConsole" target="_blank" rel="noopener noreferrer">Esplora su GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-category">Machine Learning · Python</span>
+          <h3>Sentinel2</h3>
+          <p>Analisi del suolo e dei territori attraverso immagini satellitari Sentinel-2 della costellazione Copernicus.</p>
+          <a href="https://github.com/MartaCoiro/Sentinel2" target="_blank" rel="noopener noreferrer">Esplora su GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <span class="project-category">Web Development · Code Comprehension</span>
+          <h3>The Code Insight Platform</h3>
+          <p>Web app per esperimenti sulla comprensione del codice, con un confronto tra commenti generati dall'intelligenza artificiale e commenti scritti da persone.</p>
+          <a href="https://github.com/MartaCoiro/ISD" target="_blank" rel="noopener noreferrer">Esplora su GitHub ↗</a>
+        </article>
+      </div>
+      <div class="github-more"><a href="https://github.com/MartaCoiro" target="_blank" rel="noopener noreferrer">Tutti i progetti su GitHub ↗</a></div>
+    </section>
+
+    <section id="publications" class="reveal">
+      <h2>Pubblicazioni e ricerca</h2>
+      <p class="section-intro">Un contributo alla ricerca sull'utilizzo dell'intelligenza artificiale per supportare la comprensione del codice.</p>
+
+      <article class="publication-card">
+        <div class="publication-topline">
+          <span class="project-category">Ricerca scientifica · Intelligenza artificiale · Software Engineering</span>
+          <span class="publication-event">KES 2026 · Dublino</span>
+        </div>
+
+        <h3>Il supporto dell'intelligenza artificiale nella comprensione del codice</h3>
+
+        <p>
+          Studio sperimentale che confronta tre modalità di supporto alla comprensione del codice:
+          commenti scritti da sviluppatori, commenti generati dall'intelligenza artificiale e
+          interazione conversazionale con un chatbot.
+        </p>
+
+        <div class="publication-details">
+          <div>
+            <strong>Metodo</strong>
+            <span>Studio con 18 studenti universitari, su frammenti di codice Java e Rust.</span>
+          </div>
+          <div>
+            <strong>Risultati</strong>
+            <span>I commenti generati dall'IA hanno ridotto i tempi medi di comprensione; il chatbot è stato percepito come il supporto più utile.</span>
+          </div>
+          <div>
+            <strong>Contributo</strong>
+            <span>Ricerca condotta in collaborazione con il gruppo di coautori e presentata alla conferenza KES 2026 a Dublino.</span>
+          </div>
+        </div>
+        <a class="publication-link" href="https://www.sciencedirect.com/science/article/pii/S1877050926037051" target="_blank" rel="noopener noreferrer">
+          Leggi la pubblicazione su ScienceDirect ↗
+        </a>
+      </article>
+    </section>
+
+    <section id="more" class="reveal">
+      <h2>Altre informazioni</h2>
+      <div class="more-grid">
+        <article class="more-card">
+          <span class="more-icon">🌍</span>
+          <h3>Lingue</h3>
+          <p><strong>Italiano:</strong> madrelingua</p>
+          <p><strong>Inglese:</strong> B2 (ascolto, lettura, produzione, interazione e scrittura)</p>
+        </article>
+        <article class="more-card">
+          <span class="more-icon">🤝</span>
+          <h3>Competenze trasversali</h3>
+          <p>Collaborazione in team, gestione autonoma delle attività, definizione delle priorità, coordinamento di progetti di gruppo e comunicazione con persone di culture diverse.</p>
+        </article>
+        <article class="more-card">
+          <span class="more-icon">🎨</span>
+          <h3>Interessi</h3>
+          <p>Fotografia, riprese video, disegno, musica, viaggi e sport. La pratica del tennis ha contribuito a sviluppare determinazione e orientamento al miglioramento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Parliamo del tuo prossimo progetto</h2>
+      <div class="contact-info">
+        <p>Se cerchi una sviluppatrice con competenze full-stack e una formazione in sicurezza informatica, sarò felice di conoscere la tua idea.</p>
+        <a class="email-link" href="mailto:martacoiro291@gmail.com">martacoiro291@gmail.com</a>
+        <div class="contact-actions">
+          <a class="contact-cta" href="mailto:martacoiro291@gmail.com">Scrivimi una email ↗</a>
+        </div>
+        <p class="social-intro">Seguimi qui sui social per rimanere sempre aggiornato sui miei progetti e sulle novità del mio percorso professionale.</p>
+        <div class="social-links">
+          <a href="https://github.com/MartaCoiro" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/marta_coiro/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/marta.coiro.9/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/in/marta-coiro-650657227/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Marta Coiro · R&amp;D Full-stack Developer</p></footer>
   <script src="js/script.js"></script>
 </body>
-
 </html>
